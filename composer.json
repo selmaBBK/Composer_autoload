@@ -1,0 +1,16 @@
+{
+    "name": "selma/composer_autoload",
+    "description": "Quete composer autoload",
+    "authors": [
+        {
+            "name": "selmaBBK",
+            "email": "selma.boubakri@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/wcs/"
+        }
+    }
+}
