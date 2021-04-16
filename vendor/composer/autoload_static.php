@@ -16,7 +16,17 @@ class ComposerStaticInit23e687eb05d0a822a01a00f63881a72d
     public static $prefixDirsPsr4 = array (
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/Wcs',
+            0 => __DIR__ . '/../..' . '/src/wcs',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'H' => 
+        array (
+            'HelloWorld' => 
+            array (
+                0 => __DIR__ . '/..' . '/ehime/hello-world/src',
+            ),
         ),
     );
 
@@ -29,6 +39,7 @@ class ComposerStaticInit23e687eb05d0a822a01a00f63881a72d
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit23e687eb05d0a822a01a00f63881a72d::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit23e687eb05d0a822a01a00f63881a72d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit23e687eb05d0a822a01a00f63881a72d::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit23e687eb05d0a822a01a00f63881a72d::$classMap;
 
         }, null, ClassLoader::class);
